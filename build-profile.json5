@@ -1,0 +1,55 @@
+{
+  "app": {
+    "signingConfigs": [
+      {
+        "name": "default",
+        "type": "HarmonyOS",
+        "material": {
+          "certpath": "/Users/rumuli/.ohos/config/default_HarmonyDemo_E3q5bjiutCCbT1ATPQUcwn27cGxe9ZARau3FgM53HBI=.cer",
+          "storePassword": "0000001A0256DED266F3AB3BF943890C3570F90A81503E09E676F790D8B1210BC6F99D9A8D53922601BD",
+          "keyAlias": "debugKey",
+          "keyPassword": "0000001A3CF8BB0B20817B55E0CE7FF98C9110EAB70C56B1AA35D9C00AB445ACFA930A84B802C98CB571",
+          "profile": "/Users/rumuli/.ohos/config/default_HarmonyDemo_E3q5bjiutCCbT1ATPQUcwn27cGxe9ZARau3FgM53HBI=.p7b",
+          "signAlg": "SHA256withECDSA",
+          "storeFile": "/Users/rumuli/.ohos/config/default_HarmonyDemo_E3q5bjiutCCbT1ATPQUcwn27cGxe9ZARau3FgM53HBI=.p12"
+        }
+      }
+    ],
+    "products": [
+      {
+        "name": "default",
+        "signingConfig": "default",
+        "compatibleSdkVersion": "5.0.0(12)",
+        "runtimeOS": "HarmonyOS",
+        "buildOption": {
+          "strictMode": {
+            "caseSensitiveCheck": true,
+            "useNormalizedOHMUrl": true
+          }
+        }
+      }
+    ],
+    "buildModeSet": [
+      {
+        "name": "debug",
+      },
+      {
+        "name": "release"
+      }
+    ]
+  },
+  "modules": [
+    {
+      "name": "entry",
+      "srcPath": "./entry",
+      "targets": [
+        {
+          "name": "default",
+          "applyToProducts": [
+            "default"
+          ]
+        }
+      ]
+    }
+  ]
+}
